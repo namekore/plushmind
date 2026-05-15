@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+/* import 'package:flutter/material.dart';
+import 'package:plushmind/SignUpPage.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -15,7 +16,7 @@ class Homepage extends StatelessWidget {
               const SizedBox(height: 40),
 
               ClipRRect(
-                borderRadius: BorderRadius.circular(28),
+                borderRadius: BorderRadius.circular(30),
                 child: Image.asset(
                   'img/welcome_page_image.png',
                   height: 380,
@@ -61,14 +62,19 @@ class Homepage extends StatelessWidget {
                 height: 56,
                 child: ElevatedButton(
                   onPressed: () {
-                    print("Créer un compte cliqué");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute<void>(
+                        builder: (context) => const SignUpPage(),
+                      ),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF8B5CF6),
+                    backgroundColor: const Color.fromRGBO(53, 78, 82, 1),
                     foregroundColor: Colors.white,
                     elevation: 0,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(100),
                     ),
                   ),
                   child: const Text(
@@ -84,3 +90,4 @@ class Homepage extends StatelessWidget {
     );
   }
 }
+*/
