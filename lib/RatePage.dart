@@ -1,4 +1,4 @@
-/* import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 class Ratepage extends StatelessWidget {
   const Ratepage({super.key});
@@ -100,4 +100,3 @@ class Ratepage extends StatelessWidget {
     );
   }
 }
-*/

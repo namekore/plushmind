@@ -1,4 +1,4 @@
-/* import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:plushmind/SignUpPage.dart';
 
 class Homepage extends StatelessWidget {
@@ -90,4 +90,4 @@ class Homepage extends StatelessWidget {
     );
   }
 }
-*/
+

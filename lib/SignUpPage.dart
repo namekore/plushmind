@@ -1,5 +1,4 @@
-/* import 'package:flutter/material.dart';
-import 'package:plushmind/database.dart';
+import 'package:flutter/material.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
@@ -10,7 +9,6 @@ class SignUpPage extends StatefulWidget {
 
 class _SignUpPageState extends State<SignUpPage> {
   final TextEditingController _classeController = TextEditingController();
-  final DatabaseHelper _db = DatabaseHelper();
 
   @override
   void dispose() {
@@ -74,20 +72,8 @@ class _SignUpPageState extends State<SignUpPage> {
                           height: 56,
                           child: ElevatedButton(
                             onPressed: () async {
-                              String classeClass = _classeController.text
-                                  .trim();
-
-                              if (classeClass.isNotEmpty) {
+                              if (_classeController.text.trim().isNotEmpty) {
                                 try {
-                                  await _db.addAnonymizedData(
-                                    classeClass,
-                                    "Nouvel utilisateur",
-                                  );
-
-                                  _classeController.clear();
-
-                                  if (!mounted) return;
-
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     const SnackBar(
                                       content: Text(
@@ -172,4 +158,3 @@ class _SignUpPageState extends State<SignUpPage> {
     );
   }
 }
-*/

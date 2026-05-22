@@ -1,15 +1,12 @@
-/* import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'HomePage.dart';
+import 'package:plushmind/HomePage.dart';
+import 'package:plushmind/RatePage.dart';
+import 'package:plushmind/widget_test.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
-  runApp(const MyApp());
-}
-
-Future<void> main() async {
-  await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
 
@@ -21,8 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'PlushMind',
-      home: const Homepage(),
+      home: const TestPage(),
     );
   }
 }
-*/
